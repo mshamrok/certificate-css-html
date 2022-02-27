@@ -1,0 +1,153 @@
+
+
+.box{
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 250px 100px;
+  margin-top: 100px;
+ border: 1px solid gray;
+ box-shadow: 0 0 0 10px gray inset,
+ 0 0 0 20px white inset,
+ 0 0 0 25px gray inset,
+ 0 0 0 30px white inset,
+ 0 0 0 33px gray inset;
+
+
+              overflow: hidden;
+z-index: -33;
+}
+.box::before{
+  content:"";
+  top:0px;
+  left:0px;
+  height: 300px;
+  width:300px;
+  background-color: blue;
+  box-shadow: 0 0 0 80px green;
+transform: translateX(-700px) rotate(45deg) translateY(-500px);
+
+
+}
+
+.box::after{
+  content:"";
+  top:0px;
+  left:0px;
+  height: 300px;
+  width:300px;
+  background-color: blue;
+  box-shadow: 0 0 0 80px green;
+transform: translateX(700px) rotate(45deg) translateY(500px);
+
+
+}
+
+.title{
+  display: flex;
+  position:absolute;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: translateY(-180px);
+}
+.title span{
+  display: flex;
+  position:absolute;
+  left:50px;
+  top:-10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: translateY(60px);
+}
+
+.subtitle{
+display: flex;
+position:absolute;
+left:50%;
+top:35%;
+text-transform: uppercase;
+font-weight: 300;
+transform: translateX(-50%);
+background-color:  #80aaff;
+padding-top:5px;
+padding-left: 20px;
+padding-right: 20px;
+z-index: 1;
+}
+.subtitle::before{
+  content:"";
+  top:0px;
+  left: 0px;
+  height: 25px;
+  width:25px;
+  transform: rotate(45deg) translateX(-24px) translateY(20px);
+  background-color:white;
+
+}
+.subtitle::after{
+  content:"";
+  top:0px;
+  right: 0px;
+  height: 25px;
+  width:25px;
+  transform: rotate(45deg) translateX(20px) translateY(-22px);
+  background-color:white;
+
+}
+
+
+.owner{
+  position:absolute;
+  left:-25%;
+  right:0px;
+  transform: translatex(50%);transform: translatex(50%);
+}
+.details{
+  width:450px;
+  height: 150px;
+  position:absolute;
+  top:0px
+  left:0px;
+  transform: translatey(70%);
+
+}
+
+ .date{
+  position:absolute;
+  bottom :50px;
+  left:300px;
+}
+.date h6{
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 15px;
+
+}
+
+ .sign{
+  position:absolute;
+  bottom :50px;
+  right:300px;
+
+}
+.sign h6{
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+ .logo img{
+  position: absolute;
+  bottom:50px;
+  right:0px;
+  height: 100px;
+  transform: translateX(-450px);
+
+}
+.lower{
+  margin-top: 50px;
+}
