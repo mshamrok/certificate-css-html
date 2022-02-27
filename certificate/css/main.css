@@ -28,7 +28,7 @@ z-index: -33;
   width:300px;
   background-color: blue;
   box-shadow: 0 0 0 80px green;
-transform: translateX(-700px) rotate(45deg) translateY(-500px);
+transform: translateX(-750px) rotate(45deg) translateY(-500px);
 
 
 }
@@ -41,7 +41,7 @@ transform: translateX(-700px) rotate(45deg) translateY(-500px);
   width:300px;
   background-color: blue;
   box-shadow: 0 0 0 80px green;
-transform: translateX(700px) rotate(45deg) translateY(500px);
+transform: translateX(750px) rotate(45deg) translateY(500px);
 
 
 }
